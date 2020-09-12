@@ -1,32 +1,17 @@
 import 'package:flutter/material.dart';
+import 'input_page.dart';
 
-void main() => runApp(InputPage());
+void main()=> (Health());
 
-class InputPage extends StatefulWidget {
-  @override
-  _InputPageState createState() => _InputPageState();
-}
-
-class _InputPageState extends State<InputPage> {
+class Health extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme:ThemeData(
-        primaryColor:Color(0xFF0A0E21),
-        scaffoldBackgroundColor:Color(0xFF0A0E21),
-       textTheme: TextTheme(body1: TextStyle())
+      theme: ThemeData(
+        primaryColor: Color(0xFF1D1E33),
+        scaffoldBackgroundColor: Color(0xFF1D1E33),
       ),
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Health Calculator'),
-        ),
-        body: Center(child: Text('health is wealth'),
-        ),
-        floatingActionButton:FloatingActionButton(child: Icon(Icons.add),
-        ),
-
-      ),
+      home:inputPage(),
     );
   }
 }
-
