@@ -11,11 +11,14 @@ class _InputPageState extends State<InputPage> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme:ThemeData(
+        primaryColor:Color(0xFF0A0E21),
+        scaffoldBackgroundColor:Color(0xFF0A0E21),
+       textTheme: TextTheme(body1: TextStyle())
+      ),
       home: Scaffold(
-        backgroundColor: Colors.purple[900],
         appBar: AppBar(
           title: Text('Health Calculator'),
-          backgroundColor: Colors.purple[900],
         ),
         body: Center(child: Text('health is wealth'),
         ),
