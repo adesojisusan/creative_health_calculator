@@ -10,8 +10,9 @@ class Health extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Color(0xFF1D1E33),
         scaffoldBackgroundColor: Color(0xFF1D1E33),
+          textTheme: TextTheme(body1: TextStyle(color: Colors.white),),
       ),
-      home:inputPage(),
+      home:InputPage(),
     );
   }
 }
